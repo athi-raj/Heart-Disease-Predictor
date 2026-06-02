@@ -42,7 +42,6 @@ The problem is framed as binary classification on tabular clinical data. Rather 
 ---
 
 
----
 
 ## 📊 Dataset
 
@@ -51,22 +50,24 @@ The problem is framed as binary classification on tabular clinical data. Rather 
 - **Target:** `num` column binarised → `0` No Disease / `1` Disease Present
 - **Positive rate:** ~55% (mild imbalance — handled via stratified split and AUC-based monitoring)
 
-| Feature | Type | Description |
-|---|---|---|
-| `age` | Numeric | Age in years |
-| `sex` | Categorical | Male / Female |
-| `cp` | Categorical | Chest pain type (typical, atypical, non-anginal, asymptomatic) |
-| `trestbps` | Numeric | Resting blood pressure (mmHg) |
-| `chol` | Numeric | Serum cholesterol (mg/dl) |
-| `fbs` | Categorical | Fasting blood sugar > 120 mg/dl (True/False) |
-| `restecg` | Categorical | Resting ECG results |
-| `thalch` | Numeric | Maximum heart rate achieved |
-| `exang` | Categorical | Exercise-induced angina (True/False) |
-| `oldpeak` | Numeric | ST depression induced by exercise |
-| `slope` | Categorical | Slope of peak exercise ST segment |
-| `ca` | Numeric | Number of major vessels coloured by fluoroscopy (0–4) |
-| `thal` | Categorical | Thalassemia type |
-| `dataset` | Categorical | Source institution |
+| Feature | Type | Description | Example |
+|---|---|---|---|
+| `id` | Numeric | Patient ID | 1, 2, 3 |
+| `age` | Numeric | Age in years | 63, 67 |
+| `sex` | Categorical | Male / Female | Male |
+| `dataset` | Categorical | Source institution | Cleveland, Hungary, Switzerland, VA Long Beach |
+| `cp` | Categorical | Chest pain type | typical angina, asymptomatic |
+| `trestbps` | Numeric | Resting blood pressure (mmHg) | 145, 160 |
+| `chol` | Numeric | Serum cholesterol (mg/dl) | 233, 286 |
+| `fbs` | Categorical | Fasting blood sugar > 120 mg/dl | TRUE / FALSE |
+| `restecg` | Categorical | Resting ECG results | lv hypertrophy, normal |
+| `thalch` | Numeric | Maximum heart rate achieved | 150, 108 |
+| `exang` | Categorical | Exercise-induced angina | TRUE / FALSE |
+| `oldpeak` | Numeric | ST depression induced by exercise | 2.3, 1.5 |
+| `slope` | Categorical | Slope of peak exercise ST segment | downsloping, flat |
+| `ca` | Numeric | Major vessels coloured by fluoroscopy (0–4) | 0, 3 |
+| `thal` | Categorical | Thalassemia type | fixed defect, normal, reversable defect |
+| `num` | Target | Heart disease diagnosis | 0 = No Disease, 1+ = Disease |
 
 ---
 
