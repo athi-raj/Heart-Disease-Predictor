@@ -33,22 +33,6 @@ Cardiovascular disease is the leading cause of death globally. Early detection s
 
 ---
 
-## 🗂️ Project Structure
-
-```
-Heart-Disease-Predictor/
-├── heart_disease_uci.csv           # Raw UCI Heart Disease dataset (920 records, 15 features)
-├── heart_disease_model.keras       # Trained Keras model (saved in native format)
-├── heart_scaler.pkl                # Fitted StandardScaler (fit on train only)
-├── heart_features.pkl              # Ordered feature column list (for inference alignment)
-└── Heart_Disease_Predictor.ipynb   # Main notebook (6 cells, fully sequential)
-    ├── Cell 1 — Setup, Imports & Load Data
-    ├── Cell 2 — EDA & Preprocessing
-    ├── Cell 3 — Feature Engineering & Splitting
-    ├── Cell 4 — Model Training & Evaluation
-    ├── Cell 5 — Save Artifacts & Sample Prediction
-    └── Cell 6 — Interactive GUI Prediction
-```
 
 ---
 
