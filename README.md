@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # 🫀 Heart Disease Predictor
 
@@ -12,13 +12,21 @@
 **A production-ready deep learning pipeline for clinical heart disease risk assessment.**
 Built on the UCI Heart Disease dataset, this project covers the full ML lifecycle — from raw data ingestion and exploratory analysis through model training, evaluation, artifact persistence, and an interactive GUI deployment — all within Google Colab.
 
-</div>
+
 
 ---
 
 ## 🎯 Objective
 
 Cardiovascular disease is the leading cause of death globally. Early detection significantly improves patient outcomes. This project builds a binary classification model that takes 14 clinical features from a patient's medical record and outputs a **risk probability score**, enabling clinicians and researchers to flag high-risk individuals before symptoms escalate.
+
+---
+
+
+## 💡 Solution Approach
+
+The problem is framed as binary classification on tabular clinical data. Rather than a traditional ML approach (Logistic Regression / Random Forest), a fully connected neural network with BatchNormalization is used to capture non-linear feature interactions. EarlyStopping on AUC (not accuracy) ensures the model optimises for ranking quality, which is more meaningful on mildly imbalanced medical data.
+
 
 ---
 
