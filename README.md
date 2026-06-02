@@ -23,6 +23,12 @@ The dataset used is the **UCI Heart Disease dataset**, and models like **Logisti
 
 ---
 
+
+https://colab.research.google.com/drive/1h-ywzkRNOZDsp1NOk18sucCMg7qDIYsX?usp=sharing
+
+
+---
+
 ## ⚙️ Project Workflow
 1. **Exploratory Data Analysis (EDA)**  
    - Checked for missing values  
@@ -56,16 +62,6 @@ The dataset used is the **UCI Heart Disease dataset**, and models like **Logisti
    - Predicts `Heart_Disease_Prediction` (0 or 1)  
 
 ---
-
-## 🚀 Installation & Setup
-
-Clone the repo:
-```bash
-git clone https://github.com/yourusername/heart-disease-prediction.git
-cd heart-disease-prediction
-
-```
-
 
 
 
