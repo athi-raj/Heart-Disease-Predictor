@@ -2,7 +2,7 @@
 
 # 🫀 Heart Disease Predictor
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h-ywzkRNOZDsp1NOk18sucCMg7qDIYsX?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a0p7yv38avhVELzzlh-pPjssC_KYlpAI?usp=sharing)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-Neural%20Network-D00000?logo=keras&logoColor=white)
@@ -114,7 +114,7 @@ Replaces console `input()` with a fully styled `ipywidgets` interface injected w
 
 ## 🚀 Run in Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h-ywzkRNOZDsp1NOk18sucCMg7qDIYsX?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/drive/1a0p7yv38avhVELzzlh-pPjssC_KYlpAI?usp=sharing)
 
 1. Click the badge above to open the notebook in Google Colab
 2. Connect to a runtime — GPU recommended (`Runtime → Change runtime type → T4 GPU`)
