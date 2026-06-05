@@ -283,7 +283,7 @@ Input(35) → Dense(128, ReLU) → BatchNorm → Dropout(0.3)
 
 ## 🚀 Run in Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h-ywzkRNOZDsp1NOk18sucCMg7qDIYsX?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a0p7yv38avhVELzzlh-pPjssC_KYlpAI?usp=sharing)
 
 1. Click the badge above to open the notebook
 2. Connect to a runtime — GPU recommended (`Runtime → Change runtime type → T4 GPU`)
