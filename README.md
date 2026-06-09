@@ -3,6 +3,12 @@
 # 🫀 Heart Disease Predictor
 ### Explainable AI-Based Heart Risk Screening with Personalized Health Recommendations
 
+<p align="center">
+  <a href="https://heart-disease-predictor-web-yfq5.onrender.com/">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Web%20App-Open-success?style=for-the-badge" alt="Open Website">
+  </a>
+</p>
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1a0p7yv38avhVELzzlh-pPjssC_KYlpAI?usp=sharing)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)
