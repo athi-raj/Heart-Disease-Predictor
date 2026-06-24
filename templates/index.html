@@ -1,11 +1,388 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HeartSense AI</title>
+<title>HeartSense AI | Explainable Heart Disease Prediction</title>
 
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+❤️ HeartSense AI
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#predict">Predict</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="hamburger"
+onclick="toggleMenu()">
+☰
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+AI Powered Healthcare Platform
+</span>
+
+<h1>
+Predict Heart Disease Risk
+With Explainable AI
+</h1>
+
+<p>
+
+Advanced cardiovascular risk assessment
+powered by Deep Learning, SHAP
+Explainability and Personalized
+Recommendations.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#predict"
+class="btn-primary">
+
+Start Assessment
+
+</a>
+
+<a href="#about"
+class="btn-secondary">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2>920+</h2>
+
+<p>Patient Records</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>35</h2>
+
+<p>Encoded Features</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>AI + SHAP</h2>
+
+<p>Explainable Predictions</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2>24/7</h2>
+
+<p>Instant Analysis</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">
+About HeartSense AI
+</h2>
+
+<div class="card">
+
+<p>
+
+HeartSense AI is an Explainable
+Artificial Intelligence platform
+designed to support early
+cardiovascular disease screening.
+
+The system combines Deep Learning,
+SHAP Explainability and Healthcare
+Analytics to provide transparent
+and actionable health insights.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="features">
+
+<h2 class="section-title">
+
+Features
+
+</h2>
+
+<div class="feature-grid">
+
+<div class="card">
+
+<h3>🧠 Deep Learning</h3>
+
+<p>
+Advanced Neural Network
+Prediction Engine
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔍 Explainable AI</h3>
+
+<p>
+Understand why the model
+made its prediction
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Dashboard Analytics</h3>
+
+<p>
+Interactive clinical
+insights and metrics
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>❤️ Recommendations</h3>
+
+<p>
+Personalized preventive
+health guidance
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PREDICT -->
+
+<section id="predict">
+
+<h2 class="section-title">
+
+Patient Assessment
+
+</h2>
+
+<form id="predictionForm"
+class="prediction-form">
+
+<input
+type="number"
+name="age"
+placeholder="Age"
+required>
+
+<select name="sex">
+
+<option value="Male">
+Male
+</option>
+
+<option value="Female">
+Female
+</option>
+
+</select>
+
+<input
+type="text"
+name="dataset"
+placeholder="Dataset">
+
+<input
+type="text"
+name="cp"
+placeholder="Chest Pain Type">
+
+<input
+type="number"
+step="0.1"
+name="trestbps"
+placeholder="Resting Blood Pressure">
+
+<input
+type="number"
+step="0.1"
+name="chol"
+placeholder="Cholesterol">
+
+<input
+type="text"
+name="fbs"
+placeholder="Fasting Blood Sugar">
+
+<input
+type="text"
+name="restecg"
+placeholder="Rest ECG">
+
+<input
+type="number"
+step="0.1"
+name="thalch"
+placeholder="Maximum Heart Rate">
+
+<input
+type="text"
+name="exang"
+placeholder="Exercise Angina">
+
+<input
+type="number"
+step="0.1"
+name="oldpeak"
+placeholder="Old Peak">
+
+<input
+type="text"
+name="slope"
+placeholder="Slope">
+
+<input
+type="number"
+step="0.1"
+name="ca"
+placeholder="CA">
+
+<input
+type="text"
+name="thal"
+placeholder="Thal">
+
+<button type="submit">
+
+Predict Risk
+
+</button>
+
+</form>
+
+<div id="result"
+class="result-card">
+
+<h3>
+
+Prediction Result
+
+</h3>
+
+<p>
+
+Fill the form and click
+Predict Risk
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact
+
+</h2>
+
+<div class="card">
+
+<p>
+Athira Raj
+</p>
+
+<p>
+B.Tech Computer Science
+and Engineering
+</p>
+
+<p>
+Machine Learning •
+Data Science • AI
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 HeartSense AI
+
+</footer>
+
+<script src="{{ url_for('static',
+filename='script.js') }}"></script>
+
+</body>
+</html>
+```
