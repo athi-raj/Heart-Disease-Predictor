@@ -4,7 +4,7 @@
 ### Explainable AI-Based Heart Risk Screening with Personalized Health Recommendations
 
 <p align="center">
-  <a href="https://heart-disease-predictor-web-yfq5.onrender.com/">
+  <a href="https://athi-raj-heart-disease-predictor-web.onrender.com/">
     <img src="https://img.shields.io/badge/🌐%20Live%20Web%20App-Open-success?style=for-the-badge" alt="Open Website">
   </a>
 </p>
